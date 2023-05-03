@@ -6,6 +6,8 @@ MonoImporter:
   defaultReferences:
   - Tiro: {fileID: 2695115806946421369, guid: 5a5208f08f226224f9fbc0e69c2232e1, type: 3}
   - Inimigo: {fileID: 6946347573144234334, guid: 2e8c8b87feae18144a90f2829d9059fa, type: 3}
+  - BalaGay: {fileID: 2695115806946421369, guid: 5a5208f08f226224f9fbc0e69c2232e1, type: 3}
+  - BalaHetero: {fileID: 4080647595305083161, guid: e6b2d3ed872b72b4ca2f6969632ff8d2, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

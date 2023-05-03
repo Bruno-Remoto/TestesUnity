@@ -5,7 +5,10 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - bala: {fileID: 2695115806946421369, guid: 5a5208f08f226224f9fbc0e69c2232e1, type: 3}
-  - player: {instanceID: 0}
+  - player: {fileID: -8679921383154817045, guid: 9aff94258a5d8c54395dbce6903cde0c, type: 3}
+  - TiroGay: {fileID: 2695115806946421369, guid: 5a5208f08f226224f9fbc0e69c2232e1, type: 3}
+  - TiroHetero: {fileID: 4080647595305083161, guid: e6b2d3ed872b72b4ca2f6969632ff8d2, type: 3}
+  - Textinho: {fileID: 5539192289974186424, guid: 3f4a112a30ad39b4daf367cbed2a5077, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

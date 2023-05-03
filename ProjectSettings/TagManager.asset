@@ -4,8 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Tiro
   - Inimigo
+  - TiroGay
+  - TiroHetero
+  - Chao
   layers:
   - Default
   - TransparentFX

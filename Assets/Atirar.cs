@@ -7,25 +7,51 @@ public class Atirar : MonoBehaviour
 
     public GameObject bala;
     public Transform player;
+    public GameObject TiroGay;
+    public GameObject TiroHetero;
     //float carga, cargaNecessaria = 5;
-
+    bool Gayzificar = true;
+    public GameObject Textinho;
+    string textoArma;
+    private void Start()
+    {
+        textoArma = "Modo da Arma: Gayzificar";
+    }
     void Update()
     {
+        Textinho.GetComponent<TMPro.TextMeshProUGUI>().text = textoArma;
+        if (Input.GetKeyDown(KeyCode.F))
+        {
+            if (Gayzificar)
+            {
+                Gayzificar = false;
+                textoArma = "Modo da arma: Desgayzificar";
+            }
+            else
+            {
+                Gayzificar = true;
+                textoArma = "Modo da arma: Gayzificar";
+            }
+            if (Gayzificar)
+            {
+                bala = TiroGay;
+            }
+            else
+            {
+                bala = TiroHetero;
+            }
+        }
+        
         
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             //Carregar(bala);
-            Vector3 posicao = new Vector3(transform.position.x, transform.position.y + 1, transform.position.z);
+            Vector3 posicao = new Vector3(transform.position.x, transform.position.y+1, transform.position.z);
             GameObject instancia = Instantiate(bala, posicao, player.rotation);
 
-            StartCoroutine(DestruirBala(instancia));
+            Destroy(instancia, 1.2f);
         }
 
-    }
-    IEnumerator DestruirBala(GameObject balinha)
-    {
-        yield return new WaitForSeconds(1.2f);
-        Destroy(balinha);
     }
    /*IEnumerator Carregar(GameObject balinha)
     {
